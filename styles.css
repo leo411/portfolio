@@ -45,16 +45,25 @@ button {
   display: flex;
 }
 
-.details {
+.card-post-details {
   color: #000;
   padding: 1em;
   transition-property: all;
   transition-duration: 0.3s;
 }
 
-.details:hover {
+.card-post-details:hover {
   color: #4b84e5;
   padding: 1.5em;
+}
+.card-post-h3 {
+  color: #000;
+  transition-property: all;
+  transition-duration: 0.3s;
+}
+
+.card-post-h3:hover {
+  color: #4b84e5;
 }
 .transform {
   transform: scale(1);
@@ -66,4 +75,8 @@ button {
 }
 .prenom {
   font-family: "Dancing_Script";
+}
+.navbar-button {
+  margin-right: 15px;
+  font-size: 1.3em;
 }
