@@ -6,39 +6,74 @@
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
-    <div style="padding-left:4em; padding-right:4em">
-      <div class="d-flex" style="justify-content: space-between;">
+    <div class="contenu">
+        <div
+        class="d-flex"
+        style="justify-content: space-between; margin-bottom:2.5em"
+      >
         <div>
             <a href="index.html">
-                <span style="font-size: 1.2em">Léopoldine Hallynck</span>
+                <span style="font-size: 2.2rem" class="prenom"
+                  >Léopoldine Hallynck</span
+                >
             </a>
         </div>
         <div>
-          <span>About</span>
-          <a href="/index.html" >
-            <span>Projects</span>
+          <a href="https://github.com/leo411">
+            <img src="images/github-logo.png" style="max-width:40px;" />
           </a>
-          <a href="#skills">
-            <span>Skills</span>
+        </div>
+        <div>
+          <a href="index.html#about">
+            <span class="navbar-button">About</span>
           </a>
-          <a href="#contact">
-          <span>Contact</span>
+          <a href="index.html#projects">
+            <span class="navbar-button">Projects</span>
+          </a>
+          <a href="index.html#skills">
+            <span class="navbar-button">Skills</span>
+          </a>
+          <a href="index.html#contact">
+            <span style="font-size:1.3em">Contact</span>
           </a>
         </div>
       </div>
-      <div style="padding-left:4em; padding-right:4em">
-      <h2 style="text-align:center">Intérieur et Mise en Scène</h2>
-      <div style="text-align:center">
-          <img src="./images/Intérieuretmiseenscène-index.jpg" alt="" style="max-width: 55%;"/>
+      <div class="contenu">
+      <h2 class="ta">Intérieur et Mise en Scène</h2>
+      <div class="ta">
+          <img src="./images/Intérieuretmiseenscène-index.jpg" alt="" class="width-photo-project"/>
       </div>
-      <p style="line-height:1.9">This website has been the first project I worked on. It helped me fully grasp the foundations of HTML and CSS. I've used Bootsrap to help me with the CSS. The interior designer needed a website to showcase her previous works, the atmosphere she likes to display, the pricing and contact details. I wanted the user to be able to grasp everything the interior designer has to offer from the homepage. The user can easily understand what the designers previous work looks like thanks to the carrousel and the three pictures below it which are linked to the project pages. The user can also jumped to the contact page thanks to the button at the end of the page.</p>
-      <div style="text-align:center">
-          <img src="./images/Intérieuretmiseenscène-real.png" alt="" style="max-width: 55%;"/>
-      </divstyle="text-align:center">
-      <p style="line-height:1.9">I only present the last work the interior designer made not to overwhelm the user. The user can access projects either through the navbar toggler or directly from the picture on the home page. The page atmosphere allow the user to understant the type of atmosphere the interior designer like to display. There of course a pricing page and finally a contact page. I very much enjoyed working on this project always try to put me in the shoes of the user and try to display accordingly is very challenging.</p>
-      <div style="text-align:center">
+      <p class="text-project">This is my first ever coding project.
+        I decided to host the site on <strong>Github</strong> due to it’s popularity, I also decided to use <span style="color:#0066B8; font-weight:bold">Visual Studio Code</span> due to it’s popularity (I’ve been using these ever since). Using git has been an adventure, and even though this is a personal project with only one developer (me!) I try to use good git practices just to make sure that I’m getting into good habits.
+        I prefer to learn by doing and this project helped me to fully grasp the foundations of <span style="color:#F46B3F; font-weight:bold">HTML</span> and <span style="color: #1744dc; font-weight:bold">CSS</span>. 
+        Thanks to this project I’ve learnt the basics of how to display my first HTML page.
+        <span style="color: #7952b3; font-weight:bold">Bootstrap</span> helped me to build quickly and with good CSS practices (it’s been great for learning). I’ve used their <span style="color:#61A840; font-weight:bold">jumbotron, navbar and carousel components</span>,  which I often go back to for inspiration in my other projects.
+        I had a lot of fun putting together the styles and theming for the website, particularly the font selection. Other fun parts of the site are the <span style="color:#f9bd23; font-weight:bold">onHover CSS transitions</span>  for the gallery images, as well as a fun “masonry” package that I used to jigsaw together images on the “ambiance” page. This also used a little bit of JavaScript that tracks the users scroll positions and only shows images to them once they can be visible on the page; it does this with a simple fade in animation once the class changes.</p>
+      <div class="ta">
+          <img src="./images/Intérieuretmiseenscène-real.png" alt="" class="width-photo-project"/>
+      </div>
+      <p class="text-project">I really enjoyed building this website because there a solution for everything you want to build or you’re being asked to build and I found it very intellectually challenging to learn <span style="color:#F46B3F; font-weight:bold">all the new techniques and technology</span> that I’ve leveraged.
+        I had several meetings with the interior designer to come up with the look and feel of the site, which was a <span style="color:#E10098; font-weight:bold">lot of fun</span>.
+        I built this site in my spare time whilst holding down a full-time job. It was difficult for me to juggle both at the same time because I wanted to spend more time working on the site than I did at my marketing job! It was around this time when I started to consider that web development might be a possible <span style="color:#8a4baf; font-weight:bold">career path for me</span>.</p>
+        <div class="ta" style="margin-bottom: 1em;">
+            <a href="https://github.com/leo411/interieuretmisenscene">
+                <img src="./images/github-logo.png" alt="logogithub"
+                style="max-width:40px;">
+            </a>
+        </div>
+        <div class="d-flex" style="justify-content:flex-end"
+      >
+        <div style="margin-bottom: 1em;">
+            <a href="project-PdP.html">
+            <span class="button-previous-next-work">Next work</span>
+            </a>
+        </div>
+      </div>
+      
+      
+      <div class="ta">
         <a href="mailto:lhallynck@gmail.com">
-            <button style="border: none; justify-content: center;">Email me</button>
+            <button style="justify-content: center;" class="email-me" id="contact">Email me</button>
         </a>
     </div>
       </div>

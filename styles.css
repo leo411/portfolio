@@ -1,7 +1,7 @@
-@font-face {
+/* @font-face {
   font-family: "Darker Grotesque";
-  src: url("assets/fonts/DarkerGrotesque-Regular.ttf");
-}
+  src: url("assets/fonts/Darker_Grotesque/DarkerGrotesque-Medium.ttf");
+} */
 @font-face {
   font-family: "Armatic";
   src: url("assets/fonts/Amatic_SC/AmaticSC-Regular.ttf");
@@ -32,6 +32,8 @@ a {
 button {
   background: #e3efff;
   color: #4b84e5;
+  border: none;
+  cursor: pointer;
   padding: 0.95em 1.8em;
   font-size: 0.95rem;
 }
@@ -51,17 +53,15 @@ button {
   transition-property: all;
   transition-duration: 0.3s;
 }
-
 .card-post-details:hover {
   color: #4b84e5;
-  padding: 1.5em;
+  padding: 1.2em;
 }
 .card-post-h3 {
   color: #000;
   transition-property: all;
   transition-duration: 0.3s;
 }
-
 .card-post-h3:hover {
   color: #4b84e5;
 }
@@ -71,12 +71,58 @@ button {
   transition-duration: 0.3s;
 }
 .transform:hover {
-  transform: scale(1.05);
+  transform: scale(1.02);
 }
 .prenom {
   font-family: "Dancing_Script";
 }
 .navbar-button {
-  margin-right: 15px;
+  margin-right: 35px;
   font-size: 1.3em;
+  transition-property: all;
+  transition-duration: 0.3s;
+}
+.navbar-button:hover {
+  background-color: #a9aaab;
+}
+.email-me {
+  background-color: #e3efff;
+  transition-property: all;
+}
+.email-me:hover {
+  background-color: #73abff;
+  color: #e3efff;
+}
+.contenu {
+  padding-left: 4em;
+  padding-right: 4em;
+}
+.ta {
+  text-align: center;
+}
+.width-photo-project {
+  max-width: 55%;
+}
+@media (max-width: 965px) {
+  .postcard {
+    flex-direction: column;
+  }
+}
+@media (max-width: 1015px) {
+  .navbar-items {
+    flex-wrap: wrap;
+  }
+}
+.text-project {
+  line-height: 1.9;
+  text-align: justify;
+}
+.button-previous-next-work {
+  color: #4b84e5;
+  text-decoration: underline;
+  cursor: pointer;
+  text-transform: uppercase;
+  font-size: 1em;
+  font-weight: 200;
+  letter-spacing: 0.01em;
 }

@@ -6,43 +6,75 @@
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
-    <div style="padding-left:4em; padding-right:4em">
-      <div class="d-flex" style="justify-content: space-between;">
+    <div class="contenu">
+        <div
+        class="d-flex"
+        style="justify-content: space-between; margin-bottom:2.5em"
+      >
         <div>
             <a href="index.html">
-                <span style="font-size: 1.2em">Léopoldine Hallynck</span>
+                <span style="font-size: 2.2rem" class="prenom"
+                  >Léopoldine Hallynck</span
+                >
             </a>
         </div>
         <div>
-          <span>About</span>
-          <a href="/index.html" >
-            <span>Projects</span>
+          <a href="https://github.com/leo411">
+            <img src="images/github-logo.png" style="max-width:40px;" />
+          </a>
+        </div>
+        <div>
+          <a href="#about">
+            <span class="navbar-button">About</span>
+          </a>
+          <a href="#projects">
+            <span class="navbar-button">Projects</span>
           </a>
           <a href="#skills">
-            <span>Skills</span>
+            <span class="navbar-button">Skills</span>
           </a>
           <a href="#contact">
-          <span>Contact</span>
+            <span style="font-size:1.3em">Contact</span>
           </a>
         </div>
       </div>
-      <div style="padding-left:4em; padding-right:4em">
-      <h2 style="text-align:center">Parole de pharmacienne</h2>
-      <div style="text-align:center">
-          <img src="./images/paroledepharmacienneindex.jpg" alt="" style="max-width: 55%;"/>
+      <div class="contenu">
+      <h2 class="ta">Parole de pharmacienne</h2>
+      <div class="ta">
+          <img src="./images/paroledepharmacienneindex.jpg" alt="" class="width-photo-project"/>
       </div>
-      <p style="line-height:1.9">This website is a blog that has been build with GatsbyJS for a pharmacist. It is today mainly a blog but later during the year the pharmacist would like to organise nutrition workshops so I prepare a page to host this activity. She also wants an ecommerce interface to be able to sell her boxes either through subscription or depending on topics (beauty, nutrition, health). Gatsby leverages the power of React and it was very interesting for me to work with this library.</p>
-      <div style="text-align:center">
-          <img src="./images/Screenshot_2020-01-01 All posts.jpg" alt="" style="max-width: 55%;"/>
+      <p class="text-project">This blog that I built for an instagramming pharmacist is my second project (it’s a bit of a WIP, but I’m getting there!)
+
+        I’ve chosen to build it in <span style="color:#8a4baf; font-weight:bold">GatsbyJS</span> due to Gastby’s popularity with bloggers, and the fact that I would get to put all the hours of React training that I’ve put in at <span style="color:#F46B3F; font-weight:bold">Codecademy </span>into practice. To start things off, I read through the Gatsby documentation and did a few of their step by step tutorials which helped me build a basic site with their starter template. Once I completed the tutorials I went and picked out a more complete template from Gastby’s selection with a design I thought would go well for my project.
+        I spent a few days trying to figure out how the site was built and it turned out to be quite complicated; the starter documentation is pretty good for Gatsby, but once you start using their plugins it turns into magic, and the documentation disappears. This made it really tricky to fix bugs and customize the blog the way the client wanted it.
+        After doing some pair-programming with my partner (he’s a web developer), we found that the plugins and some of the integrations with Netlify had had some bugs in them from the very start (this was my first real experience trying to debug someone else’s code!) After a number of hours trying to correct things (only to find more bugs) we decided that it would be best to start the blog from a very basic template, and only add plugins as they were necessary for the functionality that we required.</p>
+      <div class="ta">
+          <img src="./images/Screenshot_2020-01-01 All posts.jpg" alt="" class="width-photo-project"/>
       </div>
-      <p style="line-height:1.9">My customer already has a blog running on Instagram with thousands of people following her advices on health, nutrition and beauty. She releases posts about the latest news about those 3 topics. The website needed match the look and feel of the instagram account. The user need to be able to have all the posts "advices" or "news" but also all the posts "beauty", "nutrition", "health". Thanks to Gatsby JS and GraphQL I was able to query for those categories and subcategories. The pharmacist wanted the website to link to her instagram so I add it in the footer. She will also refer to the website from her Instagram.</p>
-      <div style="text-align:center">
-        <img src="./images/screenshot-netlify.png" alt="" style="max-width: 55%;"/>
+      <p class="text-project">Since then, things have been far more straightforward, and I’ve managed to get something close to a working blog within a week.
+        It’s been great fun to work with <span style="color:#5393fe; font-weight:bold">React and JSX</span>, and to see all the benefits (and much prettier code) that I can get compared to my first project which was written in vanilla HTML and CSS.  <span style="color:#f9bd23; font-weight:bold">Components</span> have been a huge timesaver, re-using code is the best!
+        The Gatsby data layer is powered with <span style="color:#E10098; font-weight:bold">GraphQL</span>, which was another new technology for me. It was interesting to see the flow of uploading a new blog through <span style="color: #008a7e; font-weight:bold">Netlify</span>, and then having that blog be pulled into my components using GraphQL. It was a little tricky to understand what was going on at first (the GraphQL docs helped), but I feel like I have a better grip on the ideas now (even if the <span style="color: #7952b3; font-weight:bold">Gatsby plugins</span> do most of the heavy lifting for me). It’s a technology I’m looking forward to using and better understanding in the future.</p>
+      <div class="ta">
+        <img src="./images/screenshot-netlify.png" alt="" class="width-photo-project"/>
     </div>
-    <p style="line-height:1.9">The pharmacist is going to use Netlify as a content manager system. It is very user friendly. She is very happy with the interface. This project is host on Github and deploy on Netlify.</p>
-      <div style="text-align:center">
+    <p class="text-project">After working on this project (even though it has only been a short time) I feel vindicated in my decision <span style="color: #7952b3; font-weight:bold">to quit my job and try to switch careers</span>; I wake up every morning looking forward to working on my code, and <span style="color:#F46B3F; font-weight:bold">I love the creativity</span>, and that feeling I get when things work!</p>
+    <div class="ta" style="margin-bottom: 1em;">
+        <a href="https://github.com/leo411/Parole-de-pharmacienne">
+            <img src="./images/github-logo.png" alt="logogithub"
+            style="max-width:40px;">
+        </a>
+    </div>
+    <div class="d-flex" style="justify-content:flex-start"
+    >
+      <div style="margin-bottom: 1em;">
+          <a href="project-IeM.html">
+          <span class="button-previous-next-work">Previous work</span>
+          </a>
+      </div>
+    </div>
+    <div class="ta" >
         <a href="mailto:lhallynck@gmail.com">
-            <button style="border: none; justify-content: center;">Email me</button>
+            <button style="justify-content: center;" class="email-me" id="contact">Email me</button>
         </a>
     </div>
       </div>
