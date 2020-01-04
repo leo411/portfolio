@@ -84,6 +84,11 @@ button {
 }
 .navbar-button:hover {
   background-color: #a9aaab;
+  color: #fff;
+}
+
+.logo-navbar-button {
+  margin: 0 5px 0 5px;
 }
 .email-me {
   background-color: #e3efff;
@@ -93,6 +98,7 @@ button {
   background-color: #73abff;
   color: #e3efff;
 }
+
 .contenu {
   padding-left: 4em;
   padding-right: 4em;
@@ -107,10 +113,29 @@ button {
   .postcard {
     flex-direction: column;
   }
+  .logo-navbar-button {
+    margin: 0 15px 0 15px;
+  }
 }
 @media (max-width: 1015px) {
   .navbar-items {
     flex-wrap: wrap;
+  }
+}
+@media (max-width: 1024px) {
+  .email-me {
+    width: 50%;
+    height: 8%;
+  }
+  button {
+    font-size: 2.4em;
+  }
+  .button-small-screen {
+    text-align: center;
+  }
+  .navbar-items {
+    flex-direction: column;
+    margin: 10px 0 10px 0;
   }
 }
 .text-project {
