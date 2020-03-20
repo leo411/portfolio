@@ -62,36 +62,34 @@
         </div>
       </div>
       <div class="contenu">
-      <h2 class="ta">Films-App</h2>
+      <h2 class="ta">Data-Visualization App</h2>
       <div class="ta">
-          <img src="./images/screenshotfilmapp1.png" alt="" class="width-photo-project"/>
+          <img src="./images//barchart.jpg" alt="" class="width-photo-project"/>
       </div>
-      <p class="text-project">This is a technical test. The web-app Films app lets you browse among 130 000 films and find the one you're looking for in milliseconds thanks to the powerful AlgoliaSearch API. You also have the possibility to add a movie to the index by clicking the button 'Add a movie' at the top of the page you will then need to fill a form (all the fiels are required). 🎞️📽️🎬🎥 This app is made of two parts an Express backend handling a http routing and a api endpoint and a searchPage using the Algolia Javascript API client method. The instantSearch library was great to use. Algolia provides many widgets that make the front-end looks good. I've built a form so the user can post a movie to the backend.</p>
+      <p class="text-project">This is a technical test. The web-app NEO-Data-Visualization is a single page react application which gives you a better understanding of Near Earth Objects (NEO). Through two types of data visualization - bar chart and a table - this app gives you a better idea of NEO size and orbiting body. As an extra feature, you can paginate through the NEO data to see any of the thousands of NEO's out there in the solar system.
+        Enjoy your journey through Near Earth Objects 🌍🌌🔭</p>
       <div class="ta">
-          <img src="./images/screenshot2filmapp.png" alt="" class="width-photo-project"/>
+          <img src="./images//Table.jpg" alt="" class="width-photo-project"/>
       </div>
-      <p class="text-project">Then the Express back-end send a request to the Algolia backend. The Algolia back-end send a response (success/fail) to the Express backend. The response is displayed on the front-end thanks to an alert message. It was great to learn a bit of Node and Express along the way. Unfortunately I cannot provide you a link to an online version because I've used a free plan to able access Algolia API client method but I've recorded a video that you can find below. </p>
-      <div class="ta" style="margin-bottom: 2em">
-          <img alt="gifform" src="./images/burn.gif" class="width-photo-project"/>
-      </div>
+      <p class="text-project">The project uses a starting point of Create React App. Typescript has been added for type safety and improved developer experience. Finally, React Google Charts was used to supply the React and Typescript bindings for Google Charts. The project uses React hooks (specifically, `useState` for component state and `useEffect` to make API calls to the NASA NEO API via javascript's `fetch`).
+
+        The codebase is organised into three simple components, `BarChart`, `Table` and `Dropdown`.
+        `BarChart` displays the selected NEO data using the bar chart of Google Charts. It takes `neoData` and `selectedPlanet` as props.
+        `Table` displays the selected NEO data in the Google Charts Table format. It takes the same props as the `BarChart` component.
+        `Dropdown` is a clickable un-ordered list which displays and makes selectable the potential orbiting bodies. It takes `neoData` and `setSelectedPlanet` as props.
+        
+        All types for the app are organised under the `types.tsx` file in the `src` folder.</p>
+      
         <div class="ta" style="margin-bottom: 1em;">
-            <a href="https://github.com/leo411/films-app">
+            <a href="https://github.com/leo411/NEO-Data-Visualization">
                 <img src="./images/github-logo.png" alt="logogithub"
                 style="max-width:40px;">
             </a>
         </div>
-        <div class="d-flex" style="justify-content:flex-start"
-    >
-      <div style="margin-bottom: 1em;">
-          <a href="project-DV.html">
-          <span class="button-previous-next-work">Previous work</span>
-          </a>
-      </div>
-    </div>
         <div class="d-flex" style="justify-content:flex-end"
       >
         <div style="margin-bottom: 1em;">
-            <a href="project-WA.html">
+            <a href="project-FA.html">
             <span class="button-previous-next-work">Next work</span>
             </a>
         </div>
