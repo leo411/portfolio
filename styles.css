@@ -109,6 +109,10 @@ button {
 .width-photo-project {
   max-width: 55%;
 }
+.eZ-logo {
+  max-width: 200px;
+}
+
 @media (max-width: 965px) {
   .postcard {
     flex-direction: column;
@@ -123,13 +127,7 @@ button {
   }
 }
 @media (max-width: 1024px) {
-  .email-me {
-    width: 50%;
-    height: 8%;
-  }
-  button {
-    font-size: 2.4em;
-  }
+
   .button-small-screen {
     text-align: center;
   }
@@ -139,7 +137,8 @@ button {
   }
 }
 .text-project {
-  line-height: 1.9;
+  line-height: 28px;
+  font-size:18px;
   text-align: justify;
 }
 .button-previous-next-work {
